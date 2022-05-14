@@ -1,0 +1,16 @@
+body > nav > div {
+    background-color: #3e3e3e;
+    height: 48px;
+}
+
+body > nav > div > div > a {
+    color: #e3e3e3;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
+    text-decoration-line: none;
+}
+
+body a:hover {
+    color: #ffffff;
+}
