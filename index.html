@@ -17,16 +17,17 @@
     <!-- icon -->
     <script src="https://kit.fontawesome.com/f33d002faa.js" crossorigin="anonymous"></script>
 
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="index style.css">
 
     </head>
 
-    <body>
+    <header class="sticky-top">
         <nav class="container-fluid">
             <div class="row">
                 <!-- 大螢幕 -->
                 <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
-                    <a href="#">Healer</a>
+                    <a href="index.html">Healer</a>
                 </div>
                 <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
                     <a href="about.html">about</a>
@@ -35,7 +36,7 @@
                     <a href="#">new</a>
                 </div>
                 <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
-                    <a href="#">photo</a>
+                    <a href="photo.html">photo</a>
                 </div>
                 <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
                     <a href="https://www.youtube.com/channel/UC0Jff8zFby-9xALhgPCG4fw">video</a>
@@ -46,43 +47,54 @@
                 
                 <!-- 小螢幕 -->
                 <div class="d-flex justify-content-center">
+                  <!-- 左側導覽列縮格 -->
                   <div class="w-100 p-2 h-100 text-start d-inline-block col-md d-block d-md-none">
                     <div class="dropdown">
-                      <button class="btn btn-secondary " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bars"></i>
                       </button>
                       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                         <li><a class="dropdown-item" href="about.html">about</a></li>
                         <li><a class="dropdown-item" href="#">new</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">photo</a></li>
+                        <li><a class="dropdown-item" href="photo.html">photo</a></li>
                         <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC0Jff8zFby-9xALhgPCG4fw">video</a></li>
                       </ul>
                     </div>
                   </div>
 
+                  <!-- 中間healer -->
                   <div class="w-100 p-2 h-100 text-center d-inline-block col-md d-block d-md-none">
-                    <a href="#">Healer</a>
+                    <a href="index.html">Healer</a>
                   </div>
                 
+                  <!-- 右側聯絡資訊縮格 -->
                   <div class="w-100 p-2 h-100 text-end d-inline-block col-md d-block d-md-none">
-                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    <div class="dropdown">
+                      <button class="btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-address-card"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="https://www.instagram.com/healer__photographer/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a class="dropdown-item" href="mailto:andy5757888asd@gmail.com"><i class="fa-regular fa-envelope"></i> Gmail</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-
             </div>
         </nav>
+    </header>
 
         <main id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://lh3.googleusercontent.com/yE23kWiML8u1p2uFr3l4K845gajp9NaOHNHCLmR7x9b_-4LJ-sHkZNK7OvtxWg4W9I1reXyu9gbcSmqpPormiv8OekfVk5KeUqpKNa-VoclaGUyP3wc3ykS1Ua9RWkx2v3M8L-SI7ALjHbB5B1ztkw8iVpSbawgYs0xtWMWlZFNfUTxr8_T7DD2s9xSZ7UQbOumAjv_BQ1WtfyvE78aol8IjpBzPtUDkHj6j8KTyto2oVSpeQ7zdTjN-c7an5P8BsGnU60irWurQTlwnlTj0OMei3jNP5nQ05hjPS1FATcM2ImguLsnU1LAnvljLQCpDAQ_8pFA3a2qssm1B6XWAnvpt-WcEbHMG4h4EhnaP6WUbhYwTyI3wBUrhqt0THjXAyTmJMQraSE3X0qLX6T_YiW2anmIx70Mr9aniYyhsvNTUtTN2XD3qTSFYXA7L_Z1z903quXjEzq2G1x11L5svcO5x-DTWaY-rtOIY4V2gDHnY8SVd9TulKRexYpWyEQMntm6SHsEIhJKj1sOumuZrx3UnpTfy7JKdoYqQ04Q7eFVSH6K6c9BGWQRR3yWHrcbtrVaYEbRdOzG_Z4ZJ0o3KCT7s7AYaBJS0PozeduhRlrnp0wiEqtGVqZtgTRJokX9-_PUGVcJK1AVsPhfiueygTwVmanzxNAq9MI6poAUzTJ5Qgqhdx_0Wynfa4PAX1abQk9tNF8mXg9cjSSc2Wcxjro2m0ae2e4J_KN3P3NpufWkNaIbR7X96dwdMcpPyPA=w1442-h961-no?authuser=0" class="d-block w-100" alt="西門街拍">
+              <img src="photo/photo-01.jpg" class="d-block w-100" alt="西門街拍">
             </div>
             <div class="carousel-item">
-              <img src="https://lh3.googleusercontent.com/Tyiux9Lw7LYyPeqt_hJWIYTUX5FRji5gQE0-XI_ZkmO4wi5xrYbSN5BYX5rolTB1yPonEhXw379pyfkd1b2Xy2BVPdjU5EFl4WjGjthkU5KM3mgB31mn7nAs6WodHlcBIJMNgY1W8hCfYk0RehzpcscM_ACuBtB9hs7FKCPGTkJnhAUybR1xp6hOF78j2trqIQhnMuSf-WbH4_1vmBmgTJUhc90pX9zzGEqF3t8RA4VfHIBVktuREQh5LghvObAWPzyLJRYNINMjBHCweXHRrBtjGx3zGvJFBrgZVS7LR57GVmfa9xlpX5hSqG9a33sYx1K-BGcoy7R6Ydy8mDNL_Q7D9ocWztCn1wI02XMTldulhIJhpSh6CRBWw3sUfH85eWHAaHAReMm3KiY8RD4BJFvJS21eTfpFJsZsCT4mnEpHmrKj9ooKbHxIwmj7i2hLicMiObywjWm09kCKsAlIXRydbETVGtS3CblMpEK8-IDyNwm4dpltch6xrKrFrYtFQJCVdS0tZqkBlyvH1zhZhJ-Kk1wMIg4u9mBfC8bOvmWbML6aWzjDlzYU3WhlGf3iMSO3OZHsGvUp7GEjY7t0VuRZxiPA5mdq20PUGcz1kB9nNeUbdQVzfPd-rZVPWoZBDkMUeCZ2yYZnVD1CUuPK-Jc85dm_cPGmdRhGnAZ4hwWtsKOMPZuNwblZPjGyIiUD1uREWh5x6YH3giM6bFVH0zRdzvCFsEAh5Q9zovO5odXCurOPlzwiYDb1LFbVbA=w1242-h828-no?authuser=0" class="d-block w-100" alt="千越大樓">
+              <img src="photo/photo-02.jpg" class="d-block w-100" alt="千越大樓">
             </div>
             <div class="carousel-item">
-              <img src="https://lh3.googleusercontent.com/34lhaSF4K8IYB1TQsYzx3ggpGe3e_TQZQ_Et9837T93u7iP2tWlD6VI3vWE8KuO_9wtzTljAXxAqXzHKihV3VcbarKm5XEc26tlCvxQJBjQ1Wk4tnU_9AEgEKoU_4lzdXwaXnp96KEqQNBGFaviHWYgNOEY-U1t-8xnDTekjPm_UC4kMJqRCEN2blufMuxi2Ab7RiGmR5V4_k7ee_Yq0S9DHr6mMZ_xJTHfYZNmHCpXuLE2WlgpHaNtZtWBt6wMbPyhknSdoRUQKS7S9wqtJhTEvSSx4yydl5CswpaA9DcI3TglCD0ydg__bBFa_aWPhCRdP0rM5u6Cr7tWLcrwFqp5YrmqSxs9FVITJfhp_kSRT_0hr3v0YSukYWLvsGkqDdIl_vEGJODqieF08_J_f-jdIyIJLCC9xNPWJVUu21TQu8k0AL7kdXp6db3SYOumP22j5uOn0Qzva2FP_9WjAYG41d3b9xbD2hCyNandjRd1YgQ_KgVPWeHEUMn5N_nO6loZeOjz91cML5Ovc6ALq0Od8Zv8cky9e43fyrdVgmWUphzhB-ZZ4ld-JcU8sS9kr8eNJ9jhsiI_TKFyxeZktjFMxw6NALB84M-IFwL1tgry6f3X7m2FFR1v-kFMzveI1j_nxT6pkenPQzCJvJCL1I7rlNoFDkCBS5-oo1k7R-UWTSDyVZKuiObzBHOXhCK7GKyGbwYncMc_94otXybPK4ONYQjiM7NTve-bN7UZDNKY7TAfYm6sdRUpeaI9hng=w1242-h828-no?authuser=0" class="d-block w-100" alt="忠權社區">
+              <img src="photo/photo-03.jpg" class="d-block w-100" alt="忠權社區">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -98,5 +110,4 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    </body>
 </html>

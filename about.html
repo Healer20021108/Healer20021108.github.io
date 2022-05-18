@@ -1,19 +1,172 @@
 <!DOCTYPE html>
-<html>  
+<html lang="zh-TW">  
     <head>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <title>healer</title>
+    
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <title>healer</title>
-        
-        <link rel="stylesheet" type="text/css" href="about.css">
+    
+        <!-- font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
+        <!-- icon -->
+        <script src="https://kit.fontawesome.com/f33d002faa.js" crossorigin="anonymous"></script>
+    
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="about style.css">
+    
     </head>
     
+    <header class="sticky-top">
+            <nav class="container-fluid">
+                <div class="row">
+                    <!-- 大螢幕 -->
+                    <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
+                        <a href="index.html">Healer</a>
+                    </div>
+                    <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
+                        <a href="about.html">about</a>
+                    </div>
+                    <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
+                        <a href="#">new</a>
+                    </div>
+                    <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
+                        <a href="photo.html">photo</a>
+                    </div>
+                    <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
+                        <a href="https://www.youtube.com/channel/UC0Jff8zFby-9xALhgPCG4fw">video</a>
+                    </div>
+                    <div class="w-100 p-2 h-100 text-center col-md d-none d-md-block">
+                        <a href="#">contact</a>
+                    </div>
+                    
+                    <!-- 小螢幕 -->
+                    <div class="d-flex justify-content-center">
+                      <!-- 左側導覽列縮格 -->
+                      <div class="w-100 p-2 h-100 text-start d-inline-block col-md d-block d-md-none">
+                        <div class="dropdown">
+                          <button class="btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="about.html">about</a></li>
+                            <li><a class="dropdown-item" href="#">new</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="photo.html">photo</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC0Jff8zFby-9xALhgPCG4fw">video</a></li>
+                          </ul>
+                        </div>
+                      </div>
+    
+                      <!-- 中間healer -->
+                      <div class="w-100 p-2 h-100 text-center d-inline-block col-md d-block d-md-none">
+                        <a href="index.html">Healer</a>
+                      </div>
+                    
+                      <!-- 右側聯絡資訊縮格 -->
+                      <div class="w-100 p-2 h-100 text-end d-inline-block col-md d-block d-md-none">
+                        <div class="dropdown">
+                          <button class="btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-address-card"></i>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/healer__photographer/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><a class="dropdown-item" href="mailto:andy5757888asd@gmail.com"><i class="fa-regular fa-envelope"></i> Gmail</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    
     <body>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  自介
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        　　我叫陳琮翰，今年19歲，出生在彰化縣（全台唯一沒有百貨公司的城市），爸爸是彰化人，媽媽是台中人。
+                    </p>
+                    <p>
+                        　　小時候的我很討厭讀書，在幼稚園時一直吵著不要上課，還常常請一個月的長假，現在想想我當初為什麼可以請那麼長的假而沒有被退學。國小的時候也是每天在期待假日的來臨，才剛禮拜六就再擔心又要禮拜一，現在想起來真的很好笑。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  興趣
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        　　平常喜歡拍照、攝影紀錄生活，把生活中看起來平淡無奇的生活小事，利用照片與影音剪接的方式，有時加上一些空拍的畫面，偶爾再加一些特效，做一些有趣的小短片，放上個人社群或在臉書社團與志同道合的網友分享。而平常則是透過與社群中的網友在互相分享作品中互相學習知識，彼此成長。如果想學習更多也會自己上網找教學網站，而大部分都是英文的網站，並不好閱讀，但憑藉著興趣，讓我有了動力。
+                    </p>
+                    <p>
+                        　　因為我跟爸爸、媽媽、爺爺和奶奶一起住，小時候爺爺、奶奶都會講以前發生的事給我們聽，爺爺告訴我，我們家之所以沒有紙本的祖譜是因為我們的祖先並不姓陳，爺爺聽他的爺爺說在前幾代是因為我們這個家族有些變故，導致我們要改姓氏，但並沒有說詳細的原因，因此我想利用祖譜來寫家族史，是不可能的只能靠著聽爺爺說他的故事，從和鄰居的阿伯口中說出的話當作寫祖譜的依據。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  家族史
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>　　聽爺爺說他的爸爸說會挑「陳」這個姓氏是因為當時在台灣，姓「陳」的人是最多的。在他的記憶中從小就天天過著心驚膽戰的日子，不僅要擔心二次世界大戰的戰火隨時可能會讓自己喪命，還要擔心可能沒有食物的問題。在他小時候，原本大家都期待國國民政府來台，但國民政府來了之後，爺爺的生活品質並沒有因此變好，因為戰爭還是存在，加上來了那麼多的軍人， 糧食供給一定更不夠。爺爺常常跟我說:「芋頭好吃，但不能當主食:番薯不好吃，但可以當主食」他說這是從小學到的知識，芋頭提供給人的營養不足夠人類生存，雖然好吃，但吃多對了對身體也不好，而地瓜雖然沒有芋頭那麼好吃卻有足夠的營養支撐我們不會餓死。也曾經說道:「我的爸爸要我別去上學，今天稻米收成，你們來幫忙。」就這樣沒辦法上學而到田裡工作一整天，回家時身體都被蚊子叮的大包小包，甚至有些其他的昆蟲會去咬傷或是觸碰到牠的汁液灼傷，這樣辛苦的事常常在爺爺的活中發生。以前房子的前面是一個魚池，裡面有養魚，旁邊還養了幾隻，平常不會把雞殺來吃，只吃他下的蛋，但因為庭院是魚池的原因，只要一下雨，家裡就會淹水，導致每次一下雨爺爺就會很忙，要幫忙把東西搬上比較高的桌子，在他的記憶中，下雨的到來是他噩夢的開始。家裡也因為有大魚池和養雞的關係，水蛇也常常出沒，早已見怪不怪，而且爺爺如果看到水蛇還要把牠們趕走或是殺死，否則家裡養的雞會被吃掉。活在恐懼與不安的日子，一直到民國76年解嚴之後才消除這樣的恐懼，但早在民國60幾年左右，爺爺已經在台灣鐵路局工作一段時間了，平時上班日在鐵路局工作，每天要做的不是在櫃台售票，也不是在月台打掃，而是最累最辛苦，要去現場修理軌道，或是要檢查有沒有哪裡的電路壞掉了。而就在民國76爺爺因為小時候不好的回憶，加上房子也老舊了，決定蓋一棟新的現代房子，那時因為爺爺在鐵路局上班有認識家裡從事建造房子的人，於是爺爺找他們來蓋現在我們住的房子，基於同事的份上，也算了一個比較便宜的價格，而因為小時候下雨會淹水的記憶，讓爺爺非常討厭下雨天，為了避免以後房子在下雨天又會淹水，爺爺在蓋房子之前先把魚池的凹洞填平，而且不只填平，還往上加高了一米多，這樣確保家裡是不會淹水的，這樣一來就不用擔心下雨天會淹水了。
+                    </p>
+                    <p>
+                        　　爺爺在平日上班，假日則會和工人們一起搬磚頭、鋼筋、混泥土等等......到了民國79年，他那時在鐵路局接觸到一些廟宇相關的事務，開始在休假時，在家削桃木劍，廟裡提供給大家擋煞的護身符，那時家裡沒有鐵桌能當砍柴雕刻的工作檯，於是爺爺就在鐵路局拿了一些不要的廢棄鐵軌，切成小段，帶回家當作工作台。就這樣做了多年沒有代價，不求回報的事，而爺爺本身也樂在其中，直到民國107年因為雕刻桃木劍實在是太耗精力，因為爺爺也老了，才沒有繼續做下去。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    父親的故事
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>　　我爸爸也會跟我說他以前的故事在1958年出生，他就讀的國小是「大嘉國小」，他說有一天正值下課時間，他在走廊上看見外面的操場吹起狂風，不是颱風，而是龍捲風!但這個龍捲風幾乎沒有破壞力，於是同學們聚在一起，看著龍捲風往活動中心的方向過去，什麼是都沒發生，龍捲風就消失了。而爸爸國、高中時期，校園的髮禁尚未解除，常常看見有一些沒有遵守髮禁的學生被教官當眾大罵，不過我爸爸都很遵守當時的校規並沒有被罵過!高中就讀「彰化高中」，他記憶中最有印象的一件事是他有時上課遲到或是下課想買東西吃，為了躲開教官的視線，都會從彰中後們的圍牆爬進爬出，遲到時教官部會看到，下課跑出區買東西吃也不會被抓到，有趣的是他們是輪流的方式偷跑出去買食物的，而且直接明目張膽的，當天誰是值日生，誰就要去負責買食物回來，大家是輪流互相照應的模式，他說這是他高中時一個很難忘的回憶，有一種共患難的感覺。大學時期因為考上了「淡江大學」而去北部租房子，再加上從小家裡周圍都是我們加種的樹，他也喜歡種植物而加入園藝社，遇見了同樣喜歡種花種樹，研究植物的一群人，其中有一人就是我媽媽，因為爸爸屬於乖乖型的，大學生活也沒有甚麼特別的事就畢業了。
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    爺爺的故事
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>　　畢業完時間過得很快，到了民國86年爸爸和他生命中的人結婚，在台中買了一戶公寓，因為要買便宜的，所以選了一棟沒有電梯沒有管理員的公寓，而且還在六樓，也是那棟公寓的頂樓，想說離他在台中的公司近，爬六樓就當作在健身，但後來公司開了副場在彰化的彰濱工業區，於是他向公司申請要調去新的廠房上班，公司批准後，就和媽媽一同搬回在和美的住所，而台中的房子則租給其他人使用，讓每個月有額外的一些金錢來源，民國91年是我出生的那一年，隔年公司給爸爸的職位晉升成主要幹部，八年後再晉升為課長，就在民國106年成為了「台中精機」鹿港廠區的副總！這事業一路晉升可以看出他待人處事上絕對是有過人之處，才可以這麼順利，一路往上爬到今天這個位子。家裡負責修剪草地和樹木的也是爸爸，大概三個月要修剪一次草皮，樹木因為庭院全部都是樹圍著，大概一、二個月就要修剪一次，因為每次修剪的都是不同棵，記得民國97年的時候，當時在清理庭院邊邊一個類似廢棄坑的地方，當時庭院外還是荒田，所以在把廢棄坑裡的東西挖出來要用土填平時，挖出了四、五顆蛇蛋，於是爸爸把蛋裝進垃圾袋打破之後丟進垃圾車，原本以為沒事了，結果繼續把那些廢棄物挖出來，居然挖到一隻蛇「王錦蛇」，我爸都稱牠「臭青母」，我爸說牠是無毒的，但基於安全還是請消防隊來抓走。還有一次爸爸在爬樹要修剪樹木，才剛往上爬就聽到「嗡嗡嗡」的聲音，一個全罩式安全帽大小的虎頭蜂窩就在他的右腳邊!嚇的他趕緊下樹，但又不能動作太大，怕會擾動那群虎頭蜂，還好當時沒有被螫，爺爺說他朋友有專門在抓蜂窩的要請朋友來把那個蜂窩摘走，結果爺爺來看完說完居然說不夠大顆，希望能放久一點，大顆一點，釀酒比較好!爸爸當然不可能讓一個那麼危險的蜂窩在那裡養蜜蜂，於是隔天我們就請消防隊來把那個超大的虎頭蜂窩摘走了，當天晚上消防隊到附近各個鄰居家，請他們把門窗緊閉，不要開燈，令爸爸感到意外的是消防隊居然是用殺蟲劑直接噴在蜂巢上，噴完之後才用網子把它裝起來，隔天爸爸說他聽到鄰居說:「我昨天晚上在睡覺，結果被一隻蜜蜂飛進來叮」爸爸疑惑地想不透，為何那麼早睡，明明才晚上七點，而且開窗戶怎麼會連紗窗一起開？
+                    </p>
+                </div>
+              </div>
+          </div>
+    </body>
+
+    <!-- <body>
         
-        <div class="container-sm bg-dark text-white">
+        <div class="container-sm ">
             <nav>
                 <div class="asidenav">
                     <a href="#自介">自介</a>
@@ -74,9 +227,8 @@
                 </section>
             </article>
         </div>
-
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    </body>   
+    </body>    -->
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

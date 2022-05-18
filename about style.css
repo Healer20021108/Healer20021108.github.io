@@ -1,0 +1,64 @@
+/* nav bar */
+header > nav > div {
+    background-color: #3e3e3e;
+    height: 48px;
+}
+
+header > nav > div > div > a {
+    color: #e3e3e3;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
+    text-decoration-line: none;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+header > nav > div > div > div > a {
+    color: #e3e3e3;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
+    text-decoration-line: none;
+}
+
+.fa-bars {
+    color: #e3e3e3;
+}
+
+.fa-address-card {
+    color: #e3e3e3;
+}
+
+header > nav > div > div > div > div > ul > li > a {
+    color: #e3e3e3;
+    font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
+}
+
+header > nav > div > div > div > div > ul > li > a a:hover {
+    color: #ffffff;
+}
+
+
+/* 自介 */
+
+body {
+    background-color: beige;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+.mainart {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
