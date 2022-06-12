@@ -141,7 +141,7 @@ header > nav > div > div > div > div > ul > li > a {
   background-image: url(photo/photo-03.jpg);
 }
 .card:nth-child(4):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url(photo/photo-04.jpg);
 }
 
 .content {
@@ -171,7 +171,7 @@ header > nav > div > div > div > div > ul > li > a {
   line-height: 1.35;
 }
 
-.btn {
+.btn1 {
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
@@ -180,13 +180,13 @@ header > nav > div > div > div > div > ul > li > a {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
+  background-color: #3e3e3e;
   border: none;
 }
-.btn:hover {
-  background-color: #0d0d0d;
+.btn1:hover {
+  background-color: #525252;
 }
-.btn:focus {
+.btn1:focus {
   outline: 1px dashed yellow;
   outline-offset: 3px;
 }
@@ -233,4 +233,22 @@ header > nav > div > div > div > div > ul > li > a {
 .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
+}
+
+/* ------------------- */
+
+html {
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  height: calc(100vh + 50px);
+width: calc(100vw);
+overflow: auto;
 }

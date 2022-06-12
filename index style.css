@@ -43,7 +43,33 @@ header > nav > div > div > div > div > ul > li > a a:hover {
     color: #ffffff;
 }
 
+img {
+    height:100vh;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    display: flex; /*使物件依序排列*/
+    flex-direction: column; /*使物件垂直排列*/
+  }
+  .wrapper {
+    flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+  }
+  .footer {
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
+    background-color:#3e3e3e;
+  }
 
 /* -------------- */
 
@@ -59,7 +85,8 @@ body::-webkit-scrollbar {
 
 body {
     -ms-overflow-style: none;
-    height: 100%;
-	width: calc(100vw + 18px);
+    height: calc(100vh + 50px);
+	width: calc(100vw);
 	overflow: auto;
 }
+
