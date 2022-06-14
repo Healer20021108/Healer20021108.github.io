@@ -132,16 +132,16 @@ header > nav > div > div > div > div > ul > li > a {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(photo/photo-01.jpg);
+  background-image: url(photo/photo/photo-01.jpg);
 }
 .card:nth-child(2):before {
-  background-image: url(photo/photo-02.jpg);
+  background-image: url(photo/photo/photo-02.jpg);
 }
 .card:nth-child(3):before {
-  background-image: url(photo/photo-03.jpg);
+  background-image: url(photo/photo/photo-03.jpg);
 }
 .card:nth-child(4):before {
-  background-image: url(photo/photo-04.jpg);
+  background-image: url(photo/photo/photo-04.jpg);
 }
 
 .content {
