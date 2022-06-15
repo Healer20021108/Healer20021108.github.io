@@ -43,17 +43,426 @@ header > nav > div > div > div > div > ul > li > a a:hover {
     color: #ffffff;
 }
 
-main a {
-    color: #3e3e3e;
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
-    text-decoration-line: none;
-    transition: color 0.2s;
-    transition: font-size 0.2s;
+@media (min-width: 1200px) {
+    .bdy {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+    
+    .container {
+        justify-content: center;
+        display: flex;
+    }
+    
+    .box {
+        width: 350px;
+        margin: 10px;
+        display: flex;
+        text-align: center;
+        position: relative;
+        /* 開啟3d效果 */
+        transform-style: preserve-3d;
+        /* 設置視距 */
+        perspective: 3000px;
+    }
+    
+    .box .front {
+        background-color: #f1f1f1;
+        padding: 50px;
+        width: 100%;
+        height: 220px;
+        /* 彈性布局 水平+垂直居中 */
+        display: flex;
+        flex-direction: column;
+        /* 陰影 */
+        box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+        /* 設置過度 */
+        transition: 0.5s ease;
+    }
+    
+    .box .front .icon {
+        height: 80px;
+    }
+    
+    .box .front .icon i,
+    .box .front span {
+        /* 漸變背景 */
+        background: linear-gradient(220deg,#02dbb0,#007adf);
+        /* 以區塊內的文字作為裁剪區域向外裁剪，文字的背景即為區塊的背景，文字之外的去愈都將被剪掉 */
+        -webkit-background-clip: text;
+        /* 將文字透明鏤空 */
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .box .front .icon i {
+        font-size: 65px;
+        font-weight: bolder;
+    
+    }
+    
+    .box .front span,
+    .box .back span {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    .box .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 220px;
+        /* background-image: url(photo/contact/photo-01.jpg);
+        background-size: 100%; */
+        background: linear-gradient(220deg,#02dbb0,#007adf);
+        padding: 30px;
+        color: #ffffff;
+        opacity: 0;
+        transform: translateY(110px) rotateX(-90deg);
+        transition: 0.5s ease;
+    }
+    
+    .box .back p {
+        margin-top: 12px;
+        text-align: center;
+        line-height: 23px;
+    }
+    
+    .box:hover .front {
+        opacity: 0;
+        transform: translateY(-110px) rotateX(90deg);
+    }
+    
+    .box:hover .back {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+    
+    .lk {
+        color: #e3e3e3;
+        font-size: 35px;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration-line: none;
+        transition: 0.3s;
+    }
+    
+    .lk:hover {
+        color: #ffffff;
+    }
+    
+    .lko {
+        vertical-align: middle;
+    }
+    
+    div > div > div > div > section > p {
+        font-size: 20px;
+    }
+
 }
 
-main a:hover {
-    color: #707070;
-    font-size: 35px;
+@media (max-width: 1200px) {
+    .bdy {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+    
+    .container {
+        justify-content: center;
+        display: flex;
+    }
+    
+    .box {
+        width: 350px;
+        margin: 10px;
+        display: flex;
+        text-align: center;
+        position: relative;
+        /* 開啟3d效果 */
+        transform-style: preserve-3d;
+        /* 設置視距 */
+        perspective: 3000px;
+    }
+    
+    .box .front {
+        background-color: #f1f1f1;
+        padding: 50px;
+        width: 100%;
+        height: 220px;
+        /* 彈性布局 水平+垂直居中 */
+        display: flex;
+        flex-direction: column;
+        /* 陰影 */
+        box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+        /* 設置過度 */
+        transition: 0.5s ease;
+    }
+    
+    .box .front .icon {
+        height: 80px;
+    }
+    
+    .box .front .icon i,
+    .box .front span {
+        /* 漸變背景 */
+        background: linear-gradient(220deg,#02dbb0,#007adf);
+        /* 以區塊內的文字作為裁剪區域向外裁剪，文字的背景即為區塊的背景，文字之外的去愈都將被剪掉 */
+        -webkit-background-clip: text;
+        /* 將文字透明鏤空 */
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .box .front .icon i {
+        font-size: 65px;
+        font-weight: bolder;
+    
+    }
+    
+    .box .front span,
+    .box .back span {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    .box .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 220px;
+        /* background-image: url(photo/contact/photo-01.jpg);
+        background-size: 100%; */
+        background: linear-gradient(220deg,#02dbb0,#007adf);
+        padding: 30px;
+        color: #ffffff;
+        opacity: 0;
+        transform: translateY(110px) rotateX(-90deg);
+        transition: 0.5s ease;
+    }
+    
+    .box .back p {
+        margin-top: 12px;
+        text-align: center;
+        line-height: 23px;
+    }
+    
+    .box:hover .front {
+        opacity: 0;
+        transform: translateY(-110px) rotateX(90deg);
+    }
+    
+    .box:hover .back {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+    
+    .lk {
+        color: #e3e3e3;
+        font-size: 35px;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration-line: none;
+        transition: 0.3s;
+    }
+    
+    .lk:hover {
+        color: #ffffff;
+    }
+    
+    .lko {
+        vertical-align: middle;
+    }
+    
+    div > div > div > div > section > p {
+        font-size: 20px;
+    }
+    
+    
+    
+    main a {
+        color: #3e3e3e;
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: 'Josefin Sans', sans-serif;/*字體標籤*/
+        text-decoration-line: none;
+        transition: color 0.2s;
+        transition: font-size 0.2s;
+    }
+    
+    
+    html {
+        overflow: -moz-hidden-unscrollable;
+        height: 100%;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body {
+        -ms-overflow-style: none;
+        height: calc(100vh + 50px);
+        width: calc(100vw);
+        overflow: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .bdy {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+    
+    .container {
+        justify-content: center;
+    }
+    
+    .box {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+        /* 開啟3d效果 */
+        transform-style: preserve-3d;
+        /* 設置視距 */
+        perspective: 3000px;
+    }
+    
+    .box .front {
+        background-color: #f1f1f1;
+        padding: 50px;
+        width: 100%;
+        height: 220px;
+        /* 彈性布局 水平+垂直居中 */
+        display: flex;
+        flex-direction: column;
+        /* 陰影 */
+        box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+        /* 設置過度 */
+        transition: 0.5s ease;
+    }
+    
+    .box .front .icon {
+        height: 80px;
+    }
+    
+    .box .front .icon i,
+    .box .front span {
+        /* 漸變背景 */
+        background: linear-gradient(220deg,#02dbb0,#007adf);
+        /* 以區塊內的文字作為裁剪區域向外裁剪，文字的背景即為區塊的背景，文字之外的去愈都將被剪掉 */
+        -webkit-background-clip: text;
+        /* 將文字透明鏤空 */
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .box .front .icon i {
+        font-size: 65px;
+        font-weight: bolder;
+    
+    }
+    
+    .box .front span,
+    .box .back span {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    .box .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 220px;
+        /* background-image: url(photo/contact/photo-01.jpg);
+        background-size: 100%; */
+        background: linear-gradient(220deg,#02dbb0,#007adf);
+        padding: 30px;
+        color: #ffffff;
+        opacity: 0;
+        transform: translateY(110px) rotateX(-90deg);
+        transition: 0.5s ease;
+    }
+    
+    .box .back p {
+        margin-top: 12px;
+        text-align: center;
+        line-height: 23px;
+    }
+    
+    .box:hover .front {
+        opacity: 0;
+        transform: translateY(-110px) rotateX(90deg);
+    }
+    
+    .box:hover .back {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+    
+    .lk {
+        color: #e3e3e3;
+        font-size: 35px;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration-line: none;
+        transition: 0.3s;
+    }
+    
+    .lk:hover {
+        color: #ffffff;
+    }
+    
+    .lko {
+        vertical-align: middle;
+    }
+    
+    div > div > div > div > section > p {
+        font-size: 20px;
+    }
+    
+    
+    html {
+        overflow: -moz-hidden-unscrollable;
+        height: 100%;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body {
+        -ms-overflow-style: none;
+        height: calc(100vh + 50px);
+        width: calc(100vw);
+        overflow: auto;
+    }
+}
+
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: calc(100vh + 50px);
+	width: calc(100vw);
+	overflow: auto;
 }

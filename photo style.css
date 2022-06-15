@@ -74,16 +74,16 @@ header > nav > div > div > div > div > ul > li > a {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   font-family: var(--font-sans);
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .page-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .page-content {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -101,7 +101,7 @@ header > nav > div > div > div > div > ul > li > a {
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .card {
     height: 350px;
   }
@@ -132,16 +132,28 @@ header > nav > div > div > div > div > ul > li > a {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(photo/photo/photo-01.jpg);
+  background-image: url(photo/photo/photo-08.jpg);
 }
 .card:nth-child(2):before {
-  background-image: url(photo/photo/photo-02.jpg);
+  background-image: url(photo/photo/photo-07.jpg);
 }
 .card:nth-child(3):before {
-  background-image: url(photo/photo/photo-03.jpg);
+  background-image: url(photo/photo/photo-06.jpg);
 }
 .card:nth-child(4):before {
+  background-image: url(photo/photo/photo-05.jpg);
+}
+.card:nth-child(5):before {
   background-image: url(photo/photo/photo-04.jpg);
+}
+.card:nth-child(6):before {
+  background-image: url(photo/photo/photo-03.jpg);
+}
+.card:nth-child(7):before {
+  background-image: url(photo/photo/photo-02.jpg);
+}
+.card:nth-child(8):before {
+  background-image: url(photo/photo/photo-01.jpg);
 }
 
 .content {
@@ -191,7 +203,7 @@ header > nav > div > div > div > div > ul > li > a {
   outline-offset: 3px;
 }
 
-@media (hover: hover) and (min-width: 600px) {
+@media (hover: hover) and (min-width: 768px) {
   .card:after {
     transform: translateY(0);
   }
@@ -233,6 +245,22 @@ header > nav > div > div > div > div > ul > li > a {
 .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
+}
+
+
+/* ------------------- */
+
+
+#button-down {
+  background-color: #3e3e3e;
+  font-size: 20px;
+  color: #e3e3e3;
+  transition: 0.3s;
+}
+
+#button-down:hover {
+  background-color: #2d2d2d;
+  color: #ffffff;
 }
 
 /* ------------------- */
