@@ -54,12 +54,12 @@ header > nav > div > div > div > div > ul > li > a a:hover {
 .btn-primary {
     background-color: #3e3e3e;
     border: 0px;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
 .btn-primary:hover {
-    font-size: 20px;
+    font-size: 25px;
     background-color: #2b2b2b;
 }
 
